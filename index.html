@@ -3,13 +3,16 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Brian Callitray Portfolio Website">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">   
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brian Callitray Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" href="Images/PC OWNER;C4LL17R4Y BRY4N_result.png" type="image/png">
 </head>
+
 
 <body>
  
@@ -25,11 +28,11 @@
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fas-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
         </nav>
         <div class="header-text">
-            <p>Welcome To My Portfolio.</p>
+            <p class="intro">Welcome To My Portfolio.</p>
             <h1>Hi, I'm<span> Brian</span><br>Callitray from KENYA</h1>
         </div>
     </div>
@@ -114,6 +117,8 @@
             </div>
         </div>
     </div>
+</div>
+
 <!---PORTFOLIO--->
 <div id="portfolio">
     <div class="container">
@@ -151,7 +156,7 @@
                 <p>I am aiming to be a dedicated SEO specialist with experience in improving website visibility and search engine rankings through effective SEO strategies and techniques.</p>
             </div>
         </div>
-        <a href="#" class="btn">View More Projects</a>
+        <a href="https://github.com/CALLITRAYBRYAN/portfolio-website" class="btn">View More Projects</a>
     </div>
 </div>
 <div id="contact">
@@ -161,10 +166,10 @@
             <p><i class="fa-solid fa-paper-plane"></i> callitrayb@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i> +254 708 199 836</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/254708199836" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://instagram.com/CALLITRAY_BRYAN" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://linkedin.com/in/callitraybryan" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/CALLITRAYBRYAN" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             <a href="Images/BRIAN OCHIENG CURRICULUM VITAE.pdf" download class="btn btn2">Download Resume</a>
         </div>
@@ -175,7 +180,7 @@
                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn btn2">Send Message</button>
             </form>
-            <span id="form-message"></span>  
+            <span id="form-message">Message will be sent after submission.</span>  
             </div>
         </div>
         <div class="copyright">
@@ -185,54 +190,17 @@
 </div>
 
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }   
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }   
-</script>
-<script>
-    var MenuItems = document.getElementById("MenuItems");
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    MenuItems.style.maxHeight = "0px";
+<!-- Main Script -->
+<script src="script.js"></script>
 
-    function openmenu(){
-        MenuItems.style.maxHeight = "200px";
-    }
-
-    function closemenu(){
-        MenuItems.style.maxHeight = "0px";
-    }
-</script>
-<script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbwg3BOicJRNWYcTTkElTKBOq1Xu9Ct-8rvMwhCjnl623XZdAcQHHmt92S07plThtdDHtQ/exec'
-	const form = document.forms['submit-to-google-sheet']
-    const formMessage = document.getElementById('form-message')
-
-	form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-			.then(response => response.json())
-			.then(response => {
-                formMessage.textContent = 'Message sent successfully!';
-                setTimeout(() => {
-                    formMessage.textContent = '';
-                }, 5000);
-                formMessage.style.color = '#61b752';
-                form.reset();
-            })
-			.catch(error => console.error('Error!', error.message))
-	})
-</script>
+<!-- Animations -->
+<script src="animations.js"></script>
 
 </body>
 
