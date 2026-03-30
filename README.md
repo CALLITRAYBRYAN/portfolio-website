@@ -1,6 +1,6 @@
 **My Portfolio Website**
 
-This is  personal portfolio website showcasing my projects, skills, and experience.  
+This is a personal portfolio website showcasing my projects, skills, and experience.  
 Built to highlight my work in a clean, modern, and responsive design.
 ---
 Some of the features include;
