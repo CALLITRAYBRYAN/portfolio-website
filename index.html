@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian Callitray Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+ 
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/PC OWNER;C4LL17R4Y BRY4N_result.png" class="logo" alt="Logo">
+            <ul id="MenuItems">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Welcome To My Portfolio.</p>
+            <h1>Hi, I'm<span> Brian</span><br>Callitray from KENYA</h1>
+        </div>
+    </div>
+</div>
+<!--- About --->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Brian Callitray, a passionate and dedicated web developer with a strong background in creating dynamic and user-friendly websites. With a keen eye for design and a commitment to delivering high-quality work, I strive to bring innovative solutions to every project I undertake. My expertise lies in front-end development, where I excel in crafting visually appealing and responsive interfaces that enhance user experience. I am constantly learning and staying up-to-date with the latest industry trends to ensure that my skills remain sharp and relevant. Whether it's building a new website from scratch or improving an existing one, I am committed to delivering exceptional results that exceed client expectations.</p>
+            </div>
+            <div class="about-col-2">
+                <img src="Images/PC OWNER;C4LL17R4Y BRY4N_result.png" alt="About Image">
+            </div>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Front-End Development</span><br>Designing and building user interfaces with HTML, CSS, and JavaScript</li>
+                    <li><span>Back-End Development</span><br>Creating server-side applications and APIs using languages like Python, Node.js, or PHP</li>
+                    <li><span>Database Management</span><br>Working with databases such as MySQL, MongoDB, or PostgreSQL to store and manage data efficiently</li>
+                    <li><span>Version Control</span><br>Using Git and platforms like GitHub to manage code changes and collaborate with other developers</li>
+                    <li><span>Responsive Design</span><br>Ensuring websites are mobile-friendly and adapt to different screen sizes for optimal user experience</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>Web Developer</span><br>Developed and maintained multiple client websites, improving performance and user experience.</li>
+                    <li><span>Freelance Web Developer</span><br>Worked on various projects for small businesses and individuals, delivering custom web solutions.</li>
+                    <li><span>Internship at UZAPOINT TECHNOLOGIES</span><br>Assisted in the development of a web application, gaining hands-on experience in a professional setting.</li>
+                    <li><span>Personal Projects</span><br>Created several personal projects, including a portfolio website and a blog, to showcase my skills and creativity.</li>
+                    <li><span>Hackathons and Coding Competitions</span><br>Participated in various hackathons and coding competitions, demonstrating problem-solving skills and teamwork.</li>
+                    <li><span>Online Courses and Certifications</span><br>Completed numerous online courses and certifications in web development, staying up-to-date with industry trends and best practices.</li>
+                    <li><span>Technical Support</span><br>Provided technical support and troubleshooting for clients, ensuring their websites run smoothly and efficiently.</li>
+                    <li><span>Collaboration with Designers and Content Creators</span><br>Worked closely with designers and content creators to ensure seamless integration of design and functionality in web projects.</li>
+                    <li><span>Continuous Learning and Improvement</span><br>Regularly updated my skills and knowledge through online resources, workshops, and networking with other professionals in the field.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2022-2025</span><br>Diploma in Information Communication Technology - NYS ENGINEERING INSTITUTE</li>
+                    <li><span>2023</span><br>Web Development Certification - MORINGA SCHOOL</li>
+                    <li><span>2021</span><br>Certificate in Computer Studies - UNITY COLLEGE OF PROFESSIONAL STUDIES</li>
+                    <li><span>2016-2019</span><br>High School - RANG'ALA BOYS HIGH  SCHOOL</li>
+                    <li><span>Online Courses</span><br>Completed various online courses in web development, including HTML, CSS, JavaScript</li>
+                    <li><span>Workshops and Bootcamps</span><br>Attended workshops and bootcamps focused on web development, gaining practical skills and industry insights.</li>
+                    <li><span>Self-Study and Personal Projects</span><br>Engaged in self-study and personal projects to further enhance my web development skills and stay current with emerging technologies.</li>
+                    <li><span>Technical Certification BY SUPERSOURCE GLOBAL</span><br>Obtained certifications in various web development technologies and tools, demonstrating my commitment to professional growth and expertise in the field.</li>
+                </ul>
+            </div>
+
+        </div>
+
+</div>
+<!---Services --->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="services-col-1">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building responsive and user-friendly websites using the latest technologies and best practices.</p>
+                <a href="#" class="btn">View Projects and learn more</a>
+            </div>
+            <div class="services-col-2">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating visually appealing and intuitive interfaces that enhance user experience and engagement.</p>
+                <a href="#" class="btn">View Projects and learn more</a>
+            </div>
+            <div class="services-col-3">
+                <i class="fa-solid fa-search"></i>
+                <h2>SEO Optimization</h2>
+                <p>Improving website visibility and search engine rankings through effective SEO strategies and techniques.</p>
+                <a href="#" class="btn">View Projects and learn more</a>
+            </div>
+        </div>
+    </div>
+<!---PORTFOLIO--->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="portfolio-list">
+            <div class="portfolio-col-1">
+                <img src="Images/OIP_result.png" alt="Portfolio Image 1">
+                <div class="layer">
+                    <h3>Web Development Project</h3>
+                    <p>Click to view details</p>
+                    <a href="#"><i class="fa-solid fa-link"></i>View Project</a>
+                </div>
+                <h2>Web Development Project</h2>
+                <p>I am a passionate web developer with experience in creating responsive and user-friendly websites using the latest technologies and best practices.</p>
+            </div>
+            <div class="portfolio-col-2">
+                <img src="Images/WEB PROJECT_result.png" alt="Portfolio Image 2">
+                <div class="layer">
+                    <h3>UI/UX Design Project</h3>
+                    <p>Click to view details</p>
+                    <a href="#"><i class="fa-solid fa-link"></i>View Project</a>
+                </div>
+                <h2>UI/UX Design Project</h2>
+                <p>I am on the verge of becoming a creative UI/UX designer with experience in creating intuitive and engaging user interfaces that enhance the overall user experience.</p>
+
+            </div>
+            <div class="portfolio-col-3">
+                <img src="Images/OIP_result.png" alt="Portfolio Image 3">
+                <div class="layer">
+                    <h3>SEO Optimization Project</h3>
+                    <p>Click to view details</p>
+                    <a href="#"><i class="fa-solid fa-link"></i>View Project</a>
+                </div>
+                <h2>SEO Optimization Project</h2>
+                <p>I am aiming to be a dedicated SEO specialist with experience in improving website visibility and search engine rankings through effective SEO strategies and techniques.</p>
+            </div>
+        </div>
+        <a href="#" class="btn">View More Projects</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> callitrayb@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +254 708 199 836</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Images/BRIAN OCHIENG CURRICULUM VITAE.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet" method="post">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span id="form-message"></span>  
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2026 Brian Callitray. All rights reserved. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }   
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
+</script>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function openmenu(){
+        MenuItems.style.maxHeight = "200px";
+    }
+
+    function closemenu(){
+        MenuItems.style.maxHeight = "0px";
+    }
+</script>
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwg3BOicJRNWYcTTkElTKBOq1Xu9Ct-8rvMwhCjnl623XZdAcQHHmt92S07plThtdDHtQ/exec'
+	const form = document.forms['submit-to-google-sheet']
+    const formMessage = document.getElementById('form-message')
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                formMessage.textContent = 'Message sent successfully!';
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                }, 5000);
+                formMessage.style.color = '#61b752';
+                form.reset();
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+</body>
+
+</html>
